@@ -56,7 +56,8 @@ import vim, urllib, urllib2, json, StringIO, gzip, re
 
 query = vim.eval("a:query")
 
-QUESTION_URL = "http://api.stackexchange.com/2.2/search/excerpts?order=desc&sort=relevance&q=%s&accepted=true&site=stackoverflow"
+#QUESTION_URL = "http://api.stackexchange.com/2.2/search/excerpts?order=desc&sort=relevance&q=%s&accepted=true&site=stackoverflow"
+QUESTION_URL = "http://api.stackexchange.com/2.2/users/1013828/favorites?order=desc&sort=activity&site=stackoverflow"
 ANSWER_URL = "http://api.stackexchange.com/2.2/questions/%s/?order=desc&sort=votes&site=stackoverflow&filter=!)Rw3MeNsaTmNs*UdDXqKh*Ci"
 TIMEOUT = 20
 
